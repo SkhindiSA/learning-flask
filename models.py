@@ -26,4 +26,4 @@ def set_password(self, password):
 
 
 def check_password(self, password):
-    return check_password(self.pwdhash, password)
+    return check_password_hash(self.pwdhash, password)
