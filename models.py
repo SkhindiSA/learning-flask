@@ -1,8 +1,8 @@
-from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import sqlalchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 
 
-db = SQLAlchemy()
+db = sqlalchemy()
 
 
 class User(db.Model):

@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request
-from models import db
+#from models.py import db
 from forms import SignupForm
 
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/learningflask'
-db.init_app(app)
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/learningflask'
+#db.init_app(app)
 
 app.secret_key = "development-key"
 
